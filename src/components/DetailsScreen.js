@@ -1,12 +1,12 @@
-import react from "react";
+import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 
 const windowWidth = Dimensions.get("window").width;
 
-export default function ProfileScreen({ navigation }) {
+export default function DetailsScreen({ navigation }) {
     return(
         <View style={styles.container}>
-            <Text style={styles.title}>Profile Screen</Text>
+            <Text style={styles.title}>Details Screen</Text>
             <View style={styles.buttonContainer}>           
             <Button
                 title="Go to Home"
@@ -15,13 +15,13 @@ export default function ProfileScreen({ navigation }) {
             </View>
             <View style={styles.buttonContainer}>
             <Button
-                title="Go to Details"
-                onPress={() => navigation.navigate("Details")}
+                title="Go to Profile"
+                onPress={() => navigation.navigate("Profile")}
             />
         </View>
         </View>
     );
-} 
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
         backgroundColor: '#add8e6',
         borderRadius: 5,
     },
-});
+}); 
